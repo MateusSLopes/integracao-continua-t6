@@ -10,7 +10,7 @@ on:
 jobs:
   main:
     name: CI Workflow Main
-    uses: ./.github/workflows/ci-banckend.yml
+    uses: ./.github/workflows/ci-backend.yml
   merge:
     needs: main
     runs-on: ubuntu-latest
