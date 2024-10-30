@@ -33,8 +33,8 @@ public class PacienteTest {
 	private final MockMvc mockMvc;
 
 	@Autowired
-	PacienteTest(MockMvc mockMvc) {
-		this.mockMvc = mockMvc;
+	PacienteTest(MockMvc mock) {
+		this.mockMvc = mock;
 	}
 
     @Test
