@@ -3,10 +3,18 @@ name: CI Back-end (Branches)
 on:
   push:
     branches:
+<<<<<<< HEAD
         - '**'
         - '!main'
     paths:
         - 'sgcmapi/**'
+=======
+      - '**'
+      - '!main'
+    paths:
+      - 'sgcmapi/**'
+
+>>>>>>> c7e9363569612b6b6d3c4c8fbbc020136571043b
 jobs:
   main:
     name: CI Workflow Main
@@ -22,4 +30,8 @@ jobs:
         with:
           type: now
           target_branch: main
+<<<<<<< HEAD
           github_token: ${{ github.token }}
+=======
+          github_token: ${{ github.token }}
+>>>>>>> c7e9363569612b6b6d3c4c8fbbc020136571043b

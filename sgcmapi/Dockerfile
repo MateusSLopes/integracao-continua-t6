@@ -1,7 +1,10 @@
 FROM maven:3.8-eclipse-temurin-17-alpine AS build
 COPY src /home/app/src
 COPY pom.xml /home/app
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7e9363569612b6b6d3c4c8fbbc020136571043b
 RUN mvn -f /home/app/pom.xml clean package -Pprod -Dmaven.test.skip=true
 
 FROM eclipse-temurin:17-jre-alpine
